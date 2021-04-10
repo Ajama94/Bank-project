@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom';
-import { MdFingerprint } from 'react-icons/md'; 
-import { FaBars, FaTimes } from 'react-icons/fa';
+import { FaBars, FaTimes, FaArtstation } from 'react-icons/fa';
 import { Button } from './Button';
 import './Navbar.css'
 import { IconContext } from 'react-icons/lib'
@@ -35,7 +34,7 @@ function Navbar() {
             <div className='navbar'>
                 <div className='navbar-container container'>
                     <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-                        <MdFingerprint  className='navbar-icon' />
+                        <FaArtstation className='navbar-icon' />
                         ZENBANK
                     </Link>
                     <div className='menu-icon' onClick={handleClick}>
